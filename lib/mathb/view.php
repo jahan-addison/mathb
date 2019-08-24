@@ -155,7 +155,7 @@ class View
 <head>
     <title><?php echo $this->pageTitle() ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="icon" href="/favicon.ico">
+    <!-- <link rel="icon" href="/favicon.ico"> -->
     <?php $this->styles() ?>
     <?php $this->mathjaxConfig() ?>
     <?php $this->scripts() ?>
@@ -273,7 +273,7 @@ class View
     protected function styles()
     {
 ?><!-- MathB\View::styles -->
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css?v=2">
     <?php $this->staticPreviewStyle() ?>
 <?php
     }
@@ -316,6 +316,10 @@ class View
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
             processEscapes: true
           },
+          "HTML-CSS": {
+             scale: 85,
+             preferredFont: "STIX"
+         },
           TeX: {
             equationNumbers: {
                 autoNumber: "AMS"
