@@ -177,7 +177,7 @@ html {
 
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 0em 1em 1em 1em;
     font-family: arial, helvetica, "trebuchet ms", sans-serif;
     line-height: 1.5;

@@ -273,7 +273,7 @@ class View
     protected function styles()
     {
 ?><!-- MathB\View::styles -->
-    <link rel="stylesheet" type="text/css" href="styles/base.css?v=4">
+    <link rel="stylesheet" type="text/css" href="styles/base.css?v=5">
     <?php $this->staticPreviewStyle() ?>
 <?php
     }
