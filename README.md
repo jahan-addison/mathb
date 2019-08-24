@@ -1,4 +1,4 @@
-![img](https://dzwonsemrish7.cloudfront.net/items/341k402l1e083p3G3231/Image%202019-08-24%20at%201.32.54%20AM.png?v=1484599f)
+![img](https://dzwonsemrish7.cloudfront.net/items/2O0X1J1C1n3a2J1h1E1Y/Screen%20Recording%202019-08-24%20at%2004.08.31.60%20PM.gif?v=6b5e17c4)
 
 > A Dark theme of MathB
 
