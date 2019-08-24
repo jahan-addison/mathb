@@ -342,19 +342,6 @@ img {
     vertical-align: top;
 }
 
-.output {
-    float: right;
-    width: 55%;
-    overflow: auto;
-    min-height: 40vh;
-    max-height: 65vh;
-    min-width: 15em;
-    vertical-align: top;
-    background: #1d243d;
-    border-radius: 5px;
-    border: #2f2f2f 1px solid;
-}
-
 /* Input form */
 #form {
     /*
@@ -440,10 +427,23 @@ a, a:visited {
 #outputCode {
     min-height: 25em;
     height: 87%;
-    font-size: 0.889rem;
+    font-size: 0.879rem;
     padding: 2px 12px;
-    color: #e2e2e2;
+    color: #f5f3f3;
 }
+
+.output {
+    float: right;
+    width: 55%;
+    overflow: auto;
+    min-height: 40vh;
+    max-height: 65vh;
+    min-width: 15em;
+    vertical-align: top;
+    background: #1d243d;
+    border: #2b2b2b 1px solid;
+}
+
 
 #outputCode > *:first-child {
     margin-top: 0;

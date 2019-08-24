@@ -587,9 +587,9 @@ class View
     protected function submitLabel()
     {
         if ($this->bag->postID === '')
-            echo 'save';
+            echo 'Save';
         else
-            echo 'update';
+            echo 'Update';
     }
 
 
