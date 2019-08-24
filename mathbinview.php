@@ -87,7 +87,7 @@ class MathBinView extends View
         <h1>
         λ.
         </h1>
-        <h2>share maths</h2>
+        <h2>share maths.</h2>
     </div>
 <?php
     }
@@ -106,7 +106,7 @@ class MathBinView extends View
     <div id="footer">
         <div id="copyright">
         <p>
-        <b>λ</b> Dark theme and contributions by <a target="_blank" href="//github.com/jahan-addison/mathb">jahan</a>.
+        Dark theme and contributions by <a target="_blank" href="//github.com/jahan-addison/mathb">jahan</a>.
             </p>
             <p><a href="http://mathb.in/5">License</a>
             </p>
