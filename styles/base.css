@@ -373,8 +373,12 @@ img {
 
 a, a:visited {
     color: #fff !important;
-    padding-bottom:3px;
-    border-bottom: #882626 1px solid;
+    padding-bottom: 3px;
+    border-bottom: #882626 2px solid;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: none;
 }
 

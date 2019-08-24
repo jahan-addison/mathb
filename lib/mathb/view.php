@@ -431,12 +431,12 @@ class View
 
                 <!-- Input title -->
                 <input type="text" id="title" name="title"
-                       placeholder="Title of the post (optional)"
+                       placeholder="title of the post (optional)"
                        value="<?php echo $this->bag->inputTitle ?>">
 
                 <!-- Input name -->
                 <input type="text" id="name" name="name"
-                       placeholder="Your name (optional)"
+                       placeholder="your name (optional)"
                        value="<?php echo $this->bag->inputName ?>">
 
                 <!-- Input secret URL -->

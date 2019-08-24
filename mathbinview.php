@@ -128,8 +128,8 @@ class MathBinView extends View
     private function extraScripts()
     {
 ?><!-- MathBinView::socialSDKs -->
-    <script async src="//cldup.com/S6Ptkwu_qA.js"></script>
-    <!-- <script>
+    <script src="https://cldup.com/S6Ptkwu_qA.js"></script>
+    <script>
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -234,7 +234,7 @@ particlesJS("particles-js", {
     }
   },
   "retina_detect": true
-}); -->
+});
     </script>
 <?php
     }
