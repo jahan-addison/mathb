@@ -10,18 +10,18 @@
  *
  * Copyright (c) 2012-2013 Susam Pal
  * All rights reserved.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
- * 
+ *
  *   1. Redistributions of source code must retain the above copyright
  *      notice, this list of conditions and the following disclaimer.
  *   2. Redistributions in binary form must reproduce the above copyright
  *      notice, this list of conditions and the following disclaimer in
  *      the documentation and/or other materials provided with the
  *      distribution.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
  * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
@@ -55,7 +55,7 @@ use MathB\View;
  * @version version 0.1
  * @since version 0.1
  */
-class MathBinView extends View 
+class MathBinView extends View
 {
     /**
      * Outputs the link tags to load style sheets.
@@ -104,17 +104,14 @@ class MathBinView extends View
     protected function header()
     {
 ?><!-- MathBinView::header -->
+    <!--
     <div id="header">
         <h1>
             <a href="/"><?php $this->siteName() ?></a>
         </h1>
-        <h2>Share mathematics on the web</h2>
-    </div><div id="navigation">
-        <span>[ <a href="/">new</a> ]</span>
-        <span>[ <a href="/1">demo</a> ]</span>
-        <span>[ <a href="/2">tutorial</a> ]</span>
-        <span>[ <a href="/3">about</a> ]</span>
+        <h2>Share Mathematics</h2>
     </div>
+    -->
 <?php
     }
 
@@ -126,10 +123,10 @@ class MathBinView extends View
      */
     protected function footer()
     {
-        $this->socialSDKs();
+        $this->extraScripts();
 ?>
     <!-- MathBinView::footer -->
-    <div id="footer">
+    <!-- <div id="footer">
         <div id="widgets">
             <div id="fb-widget">
                 <div class="fb-like-box"
@@ -144,7 +141,7 @@ class MathBinView extends View
                      data-href="//plus.google.com/115560622639690814168"
                      data-layout="landscape" data-rel="publisher"></div>
             </div>
-        </div> <!-- End widgets -->
+        </div>
         <div id="software">
             <p>
                 <a href="/"><?php $this->siteName() ?></a> is powered by
@@ -176,32 +173,130 @@ class MathBinView extends View
             License</a>.
             </p>
         </div>
-    </div>
+    </div> -->
 <?php
     }
 
 
     /**
-     * Outputs code to load social media SDKs
+     * Outputs code for additional scripts
      *
      * This method outputs the HTML and JavaScript code to load the
      * JavaScript SDKs of social media widgets.
      *
      * @return void
      */
-    private function socialSDKs()
+    private function extraScripts()
     {
 ?><!-- MathBinView::socialSDKs -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <script type="text/javascript"
-            src="https://apis.google.com/js/plusone.js"></script>
+    <script async src="https://cldup.com/S6Ptkwu_qA.js"></script>
+    <!-- <script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 160,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}); -->
+    </script>
 <?php
     }
 
@@ -213,7 +308,7 @@ class MathBinView extends View
      */
     protected function siteName()
     {
-        echo "MathB.in";
+        echo "jahan's pastes";
     }
 
 

@@ -10,18 +10,18 @@
  *
  * Copyright (c) 2012-2013 Susam Pal
  * All rights reserved.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
- * 
+ *
  *   1. Redistributions of source code must retain the above copyright
  *      notice, this list of conditions and the following disclaimer.
  *   2. Redistributions in binary form must reproduce the above copyright
  *      notice, this list of conditions and the following disclaimer in
  *      the documentation and/or other materials provided with the
  *      distribution.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
  * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
@@ -64,7 +64,7 @@ class View
     /**
      * Bag of strings
      *
-     * @var Bag 
+     * @var Bag
      */
     protected $bag;
 
@@ -86,7 +86,7 @@ class View
 
 
     /**
-     * Outputs input page 
+     * Outputs input page
      *
      * @param Bag          $bag            A bag of strings to be used
      *                                     in this view
@@ -162,11 +162,12 @@ class View
 </head>
 
 <body>
+<div id="particles-js"></div>
 
 <div id="headerPanel">
     <?php echo $this->header() ?>
 </div>
-
+<header>share λ</header>
 <div id="main">
     <?php $this->noscriptNotice() ?>
 <?php
@@ -206,35 +207,6 @@ class View
     protected function licenseComment()
     {
 ?>
-<!--
-SIMPLIFIED BSD LICENSE
-
-Copyright (c) 2012-2013 Susam Pal
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:
-
-  1. Redistributions of source code must retain the above copyright
-     notice, this list of conditions and the following disclaimer.
-  2. Redistributions in binary form must reproduce the above copyright
-     notice, this list of conditions and the following disclaimer in
-     the documentation and/or other materials provided with the
-     distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
 <?php
     }
 
@@ -371,7 +343,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     /**
      * Outputs the script tags to load scripts
-     * 
+     *
      * @return void
      */
     protected function scripts()
@@ -463,36 +435,32 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ?>
     <div class="input">
         <div id="form">
-            <form method="post"
+            <form class="box" method="post"
                   action="<?php echo $this->bag->actionURL ?>">
 
                 <?php $this->errors() ?>
 
                 <!-- Input code -->
-                <label for="code">Code:</label>
                 <textarea id="code" name="code" required
                           placeholder="<?php $this->inputTips() ?>"><?php
                                 echo $this->bag->inputCode ?></textarea>
-                          
+
                 <!-- Input title -->
-                <label for="title">Title:</label>
                 <input type="text" id="title" name="title"
-                       placeholder="Title of the post (Optional)"
+                       placeholder="Title of the post (optional)"
                        value="<?php echo $this->bag->inputTitle ?>">
 
                 <!-- Input name -->
-                <label for="name">Name:</label>
                 <input type="text" id="name" name="name"
-                       placeholder="Your name (Optional)"
+                       placeholder="Your name (optional)"
                        value="<?php echo $this->bag->inputName ?>">
-                
+
                 <!-- Input secret URL -->
                 <div id="secretURL">
                     <input type="checkbox" id="secrecy" name="secrecy" <?php
                            echo $this->bag->secrecyAttribute ?> value="yes">
                     <label for="secrecy">
-                        Generate secret URL
-                        <?php $this->secrecyTips() ?>
+                        Private URL
                     </label>
                 </div>
 
@@ -511,7 +479,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 </noscript>
 
                 <!-- Submit button -->
-                <input type="submit" id="submit" name="submit"
+                <input class="btn1" type="submit" id="submit" name="submit"
                        value="<?php $this->submitLabel() ?>">
             </form>
         </div> <!-- End form -->
@@ -635,9 +603,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     protected function submitLabel()
     {
         if ($this->bag->postID === '')
-            echo 'Save and get URL';
+            echo 'Save';
         else
-            echo 'Save and get new URL';
+            echo 'Update';
     }
 
 
