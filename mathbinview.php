@@ -83,14 +83,12 @@ class MathBinView extends View
     protected function header()
     {
 ?><!-- MathBinView::header -->
-    <!--
     <div id="header">
         <h1>
-            <a href="/"><?php $this->siteName() ?></a>
+        λ
         </h1>
-        <h2>Share Mathematics</h2>
+        <h2>share maths</h2>
     </div>
-    -->
 <?php
     }
 

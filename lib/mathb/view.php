@@ -167,7 +167,7 @@ class View
 <div id="headerPanel">
     <?php echo $this->header() ?>
 </div>
-<div id="main">
+<div class="clearfix" id="main">
     <?php $this->noscriptNotice() ?>
 <?php
     }
@@ -587,9 +587,9 @@ class View
     protected function submitLabel()
     {
         if ($this->bag->postID === '')
-            echo 'Save';
+            echo 'save';
         else
-            echo 'Update';
+            echo 'update';
     }
 
 

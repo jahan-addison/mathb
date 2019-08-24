@@ -271,6 +271,12 @@ img {
     font-size: 1.1rem;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 #footerPanel #widgets,
 #footerPanel #software,
 #footerPanel #copyright {
@@ -315,7 +321,7 @@ img {
     padding: 3rem 2rem 3rem;
     box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
     min-width: 40em;
-    height: 45vh;
+    min-height: 45vh;
 }
 
 #noscript {
@@ -339,9 +345,14 @@ img {
 .output {
     float: right;
     width: 55%;
-    height: 100%;
+    overflow: auto;
+    min-height: 40vh;
+    max-height: 65vh;
     min-width: 15em;
     vertical-align: top;
+    background: #1d243d;
+    border-radius: 5px;
+    border: #2f2f2f 1px solid;
 }
 
 /* Input form */
@@ -427,10 +438,11 @@ a, a:visited {
 }
 
 #outputCode {
-    background: #fff;
-    padding: 8px;
-    border: #a9a2a2 2px solid;
-    color: #38383a !important;
+    min-height: 25em;
+    height: 87%;
+    font-size: 0.889rem;
+    padding: 2px 12px;
+    color: #e2e2e2;
 }
 
 #outputCode > *:first-child {
