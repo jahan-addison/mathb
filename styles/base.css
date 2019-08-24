@@ -298,6 +298,7 @@ img {
 
 #footerPanel #copyright {
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 #particles-js {
@@ -371,6 +372,23 @@ img {
     color: #ccc;
 }
 
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    #headerPanel {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    #main {
+        max-width: 70vw;
+    }
+
+    #copyright {
+        margin-left: 12vw;
+    }
+}
+
 a, a:visited {
     color: #fff !important;
     padding-bottom: 3px;
@@ -432,7 +450,7 @@ a:hover {
     min-height: 25em;
     height: 87%;
     font-size: 0.879rem;
-    padding: 2px 12px;
+    padding: 12px;
     color: #f5f3f3;
 }
 
