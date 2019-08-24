@@ -167,7 +167,6 @@ class View
 <div id="headerPanel">
     <?php echo $this->header() ?>
 </div>
-<header>share λ</header>
 <div id="main">
     <?php $this->noscriptNotice() ?>
 <?php
@@ -232,20 +231,8 @@ class View
     {
         $prefix = false;
 
-        if ($this->bag->pageTitle !== '') {
-            echo $this->bag->pageTitle . ' - ';
-            $prefix = true;
-        }
-
-        if ($this->bag->inputName !== '') {
-            echo $this->bag->inputName . ' - ';
-            $prefix = true;
-        }
-
-        $this->siteName();
 
         if ($prefix === false) {
-            echo ' - ';
             $this->siteTitle();
         }
     }
@@ -261,7 +248,7 @@ class View
      */
     protected function siteTitle()
     {
-        echo 'Math pastebin with LaTeX and Markdown support';
+        echo 'share maths';
     }
 
 
@@ -391,19 +378,16 @@ class View
     <div id="footer">
         <div id="navigation">
             <a href="/">New post</a>
-            <a href="https://github.com/susam/mathb">Source code</a>
-            <a href="https://github.com/susam/mathb/issues">Report issues</a>
+            <a href="//github.com/susam/mathb">Source code</a>
+            <a href="//github.com/susam/mathb/issues">Report issues</a>
         </div>
         <div id="copyright">
             <p>
-            MathB <?php echo $this->bag->applicationVersion ?><br>
-            <?php $this->copyrightNotice() ?>
+            λ Dark theme and contributions by <a target="_blank" href="https://github.com/jahan-addison/mathb">jahan</a>.
             </p>
-            <p>This is free software. You are permitted to redistribute and
-            use it in source and binary forms, with or without modification,
-            under the terms of the <a
-            href="http://github.com/susam/mathb/LICENSE.md">Simplified
-            BSD License</a>.</p>
+            <p>
+            λ <a href="http://mathb.in/5">License</a>
+            </p>
         </div>
     </div>
 <?php

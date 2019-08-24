@@ -71,27 +71,6 @@ class MathBinView extends View
         parent::styles();
 ?>
     <!-- MathBinView::styles -->
-    <style type="text/css">
-    #fb-widget {
-        margin-bottom: 1em;
-    }
-
-    #footerPanel #widgets,
-    #footerPanel #software,
-    #footerPanel #copyright {
-        vertical-align: top;
-        text-align: left;
-        display: inline-block;
-        width: 30%;
-        padding: 0 1em;
-    }
-
-    #footerPanel #widgets *:first-child,
-    #footerPanel #software *:first-child,
-    #footerPanel #copyright *:first-child {
-        margin-top: 0;
-    }
-    </style>
 <?php
     }
 
@@ -126,54 +105,16 @@ class MathBinView extends View
         $this->extraScripts();
 ?>
     <!-- MathBinView::footer -->
-    <!-- <div id="footer">
-        <div id="widgets">
-            <div id="fb-widget">
-                <div class="fb-like-box"
-                     data-href="http://www.facebook.com/mathbin"
-                     data-height="188"
-                     data-colorscheme="light" data-show-faces="true"
-                     data-header="false" data-stream="false"
-                     data-show-border="true"></div>
-            </div>
-            <div id="gplus-widget">
-                <div class="g-page" data-width="300"
-                     data-href="//plus.google.com/115560622639690814168"
-                     data-layout="landscape" data-rel="publisher"></div>
-            </div>
-        </div>
-        <div id="software">
-            <p>
-                <a href="/"><?php $this->siteName() ?></a> is powered by
-                <a href="http://github.com/susam/mathb">MathB <?php echo
-                $this->bag->applicationVersion ?></a>.
-            </p>
-            <p>
-                LaTeX rendering is powered by <a
-                href="http://www.mathjax.org">MathJax</a>.
-            </p>
-            <p>
-                Markdown rendering is powered by <a
-                href="http://code.google.com/p/pagedown/">PageDown</a>.
-            </p>
-            <a href="/"><img src="images/mathb.png"
-                 title="MathB.in" alt="MathB.in"></a>
-            <a href="http://www.mathjax.org"><img
-            src="images/mathjax/badge-square-2.png" title="MathJax"
-            alt="MathJax"></a>
-        </div>
+    <div id="footer">
         <div id="copyright">
-            <p>
-            <a href="/"><?php $this->siteName() ?></a><br>
-            <?php $this->copyrightNotice() ?>
-            </p><p>
-            This is free software. You are permitted to redistribute and
-            use it in source and binary forms, with or without modification,
-            under the terms of the <a href="/5">Simplified BSD
-            License</a>.
+        <p>
+        <b>λ</b> Dark theme and contributions by <a target="_blank" href="//github.com/jahan-addison/mathb">jahan</a>.
             </p>
+            <p><a href="http://mathb.in/5">License</a>
+            </p>
+
         </div>
-    </div> -->
+    </div>
 <?php
     }
 
@@ -189,7 +130,7 @@ class MathBinView extends View
     private function extraScripts()
     {
 ?><!-- MathBinView::socialSDKs -->
-    <script async src="https://cldup.com/S6Ptkwu_qA.js"></script>
+    <script async src="//cldup.com/S6Ptkwu_qA.js"></script>
     <!-- <script>
 particlesJS("particles-js", {
   "particles": {
