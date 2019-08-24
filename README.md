@@ -1,3 +1,7 @@
+![img](https://dzwonsemrish7.cloudfront.net/items/341k402l1e083p3G3231/Image%202019-08-24%20at%201.32.54%20AM.png?v=1484599f)
+
+> A Dark theme of MathB
+
 MathB
 =====
 MathB is a web application that runs [MathB.in][1]. It is a pastebin for
