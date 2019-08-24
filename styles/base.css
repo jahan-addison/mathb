@@ -385,7 +385,7 @@ img {
     }
 
     #copyright {
-        margin-left: 12vw;
+        margin-left: 12vw !important;
     }
 }
 
