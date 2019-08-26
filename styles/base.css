@@ -222,6 +222,11 @@ img {
     line-height: 1;
 }
 
+#header h1 a, #header h1:visited {
+    border: none;
+    text-decoration: none;
+}
+
 #header h2 {
     margin: 0;
     font-size: 1.25em;
