@@ -85,7 +85,7 @@ class MathBinView extends View
 ?><!-- MathBinView::header -->
     <div id="header">
         <h1>
-        λ.
+        <a href="/">λ.</a>
         </h1>
         <h2>share maths.</h2>
     </div>
