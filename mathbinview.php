@@ -241,13 +241,13 @@ class MathBinView extends View
 
 
     /**
-     * Outputs MathB.in as the site name
+     * Outputs the site name
      *
      * @return void
      */
     protected function siteName()
     {
-        echo "jahan's pastes";
+        echo "share maths";
     }
 
 

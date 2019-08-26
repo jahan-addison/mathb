@@ -231,10 +231,12 @@ class View
     {
         $prefix = false;
 
-
-        if ($prefix === false) {
-            $this->siteTitle();
+        if ($this->bag->pageTitle !== '') {
+            echo $this->bag->pageTitle . ' - ';
+            $prefix = true;
         }
+        $this->siteTitle();
+
     }
 
 
@@ -593,7 +595,7 @@ class View
         if ($this->bag->postID === '')
             echo 'Save';
         else
-            echo 'Update';
+            echo 'Update and get new URL';
     }
 
 
