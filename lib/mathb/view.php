@@ -275,7 +275,7 @@ class View
     protected function styles()
     {
 ?><!-- MathB\View::styles -->
-    <link rel="stylesheet" type="text/css" href="styles/base.css?v=6">
+    <link rel="stylesheet" type="text/css" href="styles/base.css?v=7">
     <?php $this->staticPreviewStyle() ?>
 <?php
     }
@@ -319,7 +319,7 @@ class View
             processEscapes: true
           },
           "HTML-CSS": {
-             scale: 85,
+             scale: 90,
              preferredFont: "STIX"
          },
           TeX: {
