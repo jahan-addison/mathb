@@ -275,7 +275,7 @@ class View
     protected function styles()
     {
 ?><!-- MathB\View::styles -->
-    <link rel="stylesheet" type="text/css" href="styles/base.css?v=7">
+    <link rel="stylesheet" type="text/css" href="styles/base.css?v=8">
     <?php $this->staticPreviewStyle() ?>
 <?php
     }
