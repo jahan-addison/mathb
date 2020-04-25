@@ -502,7 +502,7 @@ class View
             <div id="outputCode">
                 <?php echo $this->bag->outputCode ?>
             </div>
-            <div id="outputDate"><?php echo $this->bag->date ?></div>
+            <!-- <div id="outputDate"><?php echo $this->bag->date ?></div> -->
         </div>
         <?php $this->permanentURL() ?>
     </div> <!-- End output -->
